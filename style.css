@@ -23,6 +23,9 @@
 
 
 @media (min-width: 768px) {
+:root::-webkit-scrollbar{
+  display: none;
+}
 
 body {
   padding: 0;
@@ -36,6 +39,8 @@ body {
   /*background: linear-gradient(0deg, rgba(16,170,255,1) 0%,
    rgba(0,238,255,1) 58%, rgba(0,255,255,1) 87%, rgba(1,254,255,0) 95%);*/
 }
+
+/*Header -----*/
 
 header {
 	width: 100%;
@@ -84,7 +89,7 @@ nav a:hover:after {
 nav a{
 	text-decoration: none;
   color: #fff !important;
-  font-size: 20px;
+  font-size: 1.8vw;
   font-weight: 500;
   padding: 0.2em 0.8em;
   background: #000;
@@ -98,22 +103,51 @@ nav a{
 
 .logo h4{
   font-family:'Alfa Slab One', cursive;
-  font-size: 50px;
+  font-size: 5.5vw;
   animation-name: appear;
-  animation-duration:4s
+  animation-duration:4s;
+  margin-left: 2vw;
 }
 @keyframes appear {
   0%{transform:translate(-25vw)}
   100%{transform:translate(0px)}
 }
 
+/*Body ---*/
+
 main{
+  margin:0;
   height:80vw;
   background:#000;
+  color: #fff;
 }
 
+main .presentation{
+  border: 2px solid white;
+  height:100vh;
+  width:100vw;
+  position:absolute;
+}
 
-/* pie de pagina */
+main h1 {
+  margin:0;
+
+}
+
+body {
+  min-height: 200vh;
+}
+
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  width: 0%;
+  height: 4px;
+  background: #ffffff;
+  z-index: 10000;
+}
+
+/* pie de pagina ---*/
 
 footer {
   display: flex;
