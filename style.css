@@ -62,10 +62,17 @@ header nav {
 
 nav a {
   list-style: none;
-  padding: 25px 25px;
   float: left;
   position: relative;
   margin: 2.5vh;
+	text-decoration: none;
+  color: #fff !important;
+  font-size: 1.8vw;
+  font-weight: 500;
+  padding: 0.2em 0.8em;
+  background: #000;
+  transition: all 1s ease;
+  position: relative;
 }
 
 nav a:after {
@@ -86,16 +93,6 @@ nav a:hover:after {
   transform-origin: bottom left;
 }
 
-nav a{
-	text-decoration: none;
-  color: #fff !important;
-  font-size: 1.8vw;
-  font-weight: 500;
-  padding: 0.2em 0.8em;
-  background: #000;
-  transition: all 1s ease;
-  position: relative;
-}
 
 .logo{
   color: #fff;
