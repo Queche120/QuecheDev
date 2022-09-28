@@ -3,6 +3,7 @@
   body {
     padding: 0;
     margin: 0;
+    height:auto;
   }
   
   body {
@@ -27,10 +28,15 @@
   display: none;
 }
 
+::selection{
+  color: #000;
+  background: #fff;
+}
+
 body {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  height: auto;
 }
 
 body {
@@ -54,13 +60,13 @@ header {
 }
 
 
-header nav { 
+.navegador { 
 	display: flex;
 	flex-wrap: wrap;
 	align-content: center;
 }
 
-nav a {
+.navegador-link {
   list-style: none;
   float: left;
   position: relative;
@@ -75,7 +81,7 @@ nav a {
   position: relative;
 }
 
-nav a:after {
+.navegador-link:after {
   content: '';
   position: absolute;
   width: 100%;
@@ -88,7 +94,7 @@ nav a:after {
   transition: transform 0.25s ease-out;
 }
 
-nav a:hover:after {
+.navegador-link:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
@@ -98,7 +104,7 @@ nav a:hover:after {
   color: #fff;
 }
 
-.logo h4{
+.logo h1{
   font-family:'Alfa Slab One', cursive;
   font-size: 5.5vw;
   animation-name: appear;
@@ -110,7 +116,7 @@ nav a:hover:after {
   100%{transform:translate(0px)}
 }
 
-/*Body ---*/
+/*--------Body ---------*/
 
 main{
   margin:0;
@@ -119,16 +125,30 @@ main{
   color: #fff;
 }
 
-main .presentation{
-  border: 2px solid white;
+.presentacion{
   height:100vh;
   width:100vw;
-  position:absolute;
+  display: inline-block;
 }
 
-main h1 {
-  margin:0;
+.presentacion h2 {
+  margin-top: 6%;
+  margin-left: 6%;
+  font-family: 'Lobster', cursive;
+}
 
+.nombre{
+  font-size: 4vw;
+  animation-name: appearr;
+  animation-duration:4s;
+}
+@keyframes appearr {
+  0%{transform:translateY(-25px)}
+  100%{transform:translateY(0px)}
+}
+
+.profesion{
+  font-size: 2.5vw;
 }
 
 body {
